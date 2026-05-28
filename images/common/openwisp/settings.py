@@ -251,8 +251,8 @@ if REDIS_PASS:
 
 LEAFLET_CONFIG = {
     "DEFAULT_CENTER": [
-        int(os.environ["DJANGO_LEAFET_CENTER_X_AXIS"]),
-        int(os.environ["DJANGO_LEAFET_CENTER_Y_AXIS"]),
+        float(os.environ["DJANGO_LEAFET_CENTER_X_AXIS"]),
+        float(os.environ["DJANGO_LEAFET_CENTER_Y_AXIS"]),
     ],
     "RESET_VIEW": False,
     "DEFAULT_ZOOM": int(os.environ["DJANGO_LEAFET_ZOOM"]),
